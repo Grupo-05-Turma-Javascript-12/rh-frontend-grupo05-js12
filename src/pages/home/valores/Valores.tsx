@@ -1,8 +1,7 @@
 export default function Valores() {
   return (
-    <section className="w-full bg-slate-50">
+    <section className="w-full bg-slate-50" id="valores">
       <div className="mx-auto max-w-6xl px-6 py-20">
-        {/* HEADER */}
         <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
           <div>
             <p className="text-xs font-semibold tracking-[0.2em] text-slate-500">
@@ -23,9 +22,7 @@ export default function Valores() {
           </div>
         </div>
 
-        {/* CARDS */}
         <div className="mt-16 grid gap-8 md:grid-cols-3">
-          {/* Card 1 */}
           <div className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-8 min-h-65 transition hover:shadow-md">
             <div>
               <h3 className="text-lg font-semibold text-slate-900 leading-snug">
@@ -40,7 +37,6 @@ export default function Valores() {
             </div>
           </div>
 
-          {/* Card 2 - DESTACADO */}
           <div className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-slate-300 p-8 min-h-65 shadow-sm">
             <div>
               <h3 className="text-lg font-semibold text-slate-900 leading-snug">
@@ -55,8 +51,7 @@ export default function Valores() {
             </div>
           </div>
 
-          {/* Card 3 */}
-          <div className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-8 min-h-[260px] transition hover:shadow-md">
+          <div className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-8 min-h-65 transition hover:shadow-md">
             <div>
               <h3 className="text-lg font-semibold text-slate-900 leading-snug">
                 Parceria de crescimento
@@ -72,7 +67,6 @@ export default function Valores() {
         </div>
       </div>
 
-      {/* BANNER DE NÚMEROS */}
       <div
         className="w-full bg-cover bg-center bg-no-repeat relative"
         style={{
@@ -122,7 +116,6 @@ export default function Valores() {
             </div>
           </div>
 
-          {/* Linha decorativa */}
           <div className="mt-12 h-px w-full bg-linear-to-r from-transparent via-white/10 to-transparent" />
         </div>
       </div>
