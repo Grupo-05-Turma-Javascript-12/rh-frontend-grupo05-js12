@@ -4,7 +4,7 @@ import "./App.css";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
-import Sobre from "./pages/sobre/Sobre";
+import SobreNos from "./pages/sobreNos/SobreNos";
 
 function App() {
   return (
@@ -15,8 +15,7 @@ function App() {
         <div className="min-h-[80vh]">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/sobre" element={<Sobre />} />
+            <Route path="/sobrenos" element={<SobreNos />} />
           </Routes>
         </div>
         <Footer />

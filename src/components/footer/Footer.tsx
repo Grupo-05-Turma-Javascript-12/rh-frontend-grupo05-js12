@@ -47,7 +47,17 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#sobre" className="hover:underline">
+                  <a href="#sobreempresa" className="hover:underline">
+                    Sobre a Empresa
+                  </a>
+                </li>
+                <li>
+                  <a href="#valores" className="hover:underline">
+                    Valores
+                  </a>
+                </li>
+                <li>
+                  <a href="#sobrenos" className="hover:underline">
                     Sobre Nós
                   </a>
                 </li>
