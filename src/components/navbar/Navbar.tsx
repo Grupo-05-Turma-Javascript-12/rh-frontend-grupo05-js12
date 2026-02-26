@@ -30,15 +30,7 @@ function Navbar() {
                     className="dark:text-slate-50 dark:hover:text-white/75"
                     href="#"
                   >
-                    Sobre
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="dark:text-slate-50 dark:hover:text-white/75"
-                    href="#"
-                  >
-                    Produto
+                    Sobre nós
                   </a>
                 </li>
               </ul>
@@ -113,15 +105,7 @@ function Navbar() {
                 className="block dark:text-slate-50 dark:hover:text-white/75"
                 href="#"
               >
-                Sobre
-              </a>
-            </li>
-            <li>
-              <a
-                className="block dark:text-slate-50 dark:hover:text-white/75"
-                href="#"
-              >
-                Produto
+                Sobre nós
               </a>
             </li>
           </ul>
