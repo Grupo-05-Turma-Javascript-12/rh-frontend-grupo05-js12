@@ -1,4 +1,10 @@
-import { EnvelopeIcon, MapPinLineIcon, PhoneIcon } from "@phosphor-icons/react";
+import {
+  EnvelopeIcon,
+  GithubLogoIcon,
+  InstagramLogoIcon,
+  MapPinLineIcon,
+  PhoneIcon,
+} from "@phosphor-icons/react";
 
 function Footer() {
   return (
@@ -23,43 +29,11 @@ function Footer() {
 
               <div className="flex gap-4">
                 <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <rect
-                      x="2"
-                      y="2"
-                      width="20"
-                      height="20"
-                      rx="5"
-                      stroke-width="2"
-                    />
-                    <circle cx="12" cy="12" r="4" stroke-width="2" />
-                    <circle cx="17.5" cy="6.5" r="1" />
-                  </svg>
+                  <InstagramLogoIcon size={24} color="#ffffff" />
                 </div>
 
                 <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.48 
-              0-.24-.01-1.03-.01-1.87-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 
-              1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.08 
-              0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.05A9.4 9.4 0 0112 6.84c.85 0 
-              1.71.12 2.51.35 1.9-1.32 2.74-1.05 2.74-1.05.56 1.4.21 2.44.11 2.7.64.72 1.03 1.64 
-              1.03 2.76 0 3.95-2.34 4.82-4.57 5.08.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 
-              0 .27.18.58.69.48A10.27 10.27 0 0022 12.26C22 6.58 17.52 2 12 2z"
-                    />
-                  </svg>
+                  <GithubLogoIcon size={24} color="#ffffff" />
                 </div>
               </div>
             </div>
