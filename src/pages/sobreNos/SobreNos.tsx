@@ -27,7 +27,7 @@ const cards: SobreNosCard[] = [
     role: "Desenvolvedor Fullstack",
     photo: "/cesar.jpg",
     description:
-      "esenvolvedor Full Stack com experiência no desenvolvimento de back-end escalável e interfaces modernas, utilizando Node.js, NestJS, TypeScript e React, sempre priorizando performance e qualidade de código.",
+      "Desenvolvedor Full Stack com experiência no desenvolvimento de back-end escalável e interfaces modernas, utilizando Node.js, NestJS, TypeScript e React, sempre priorizando performance e qualidade de código.",
   },
   {
     name: "João Henrique",
