@@ -13,7 +13,7 @@ const cards: SobreNosCard[] = [
     name: "Ana Beatriz",
     role: "Desenvolvedora Fullstack",
     photo: "/ana.jpg",
-    description: "Descrição detalhada da Ana.",
+    description: "Licencianda em Computação e Desenvolvedora Full Stack em formação, com experiência em HTML, CSS, JavaScript, React, TypeScript, Node.js, Pyton e Django.",
   },
   {
     name: "Andreza Luiza",
@@ -40,7 +40,7 @@ const cards: SobreNosCard[] = [
     name: "Josenil Soares",
     role: "Desenvolvedor Fullstack",
     photo: "/josenil.jpg",
-    description: "Descrição detalhada do Josenil.",
+    description: "Desenvolvedor Full Stack em formação, com foco em JavaScript e TypeScript. Atua no desenvolvimento de aplicações web utilizando Node.js e NestJS no back-end e React com TailwindCSS no front-end, com experiência em MySQL, operações CRUD e versionamento com Git.",
   },
   {
     name: "Raylander Ribeiro",
