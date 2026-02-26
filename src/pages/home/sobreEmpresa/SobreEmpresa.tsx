@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
+import type { FC } from "react";
 
 const cards = [
   {
@@ -18,7 +19,15 @@ const cards = [
   },
 ];
 
-const containerVariants = {
+/**
+ * Easing moderno (padrão Apple / Stripe feel)
+ */
+const smoothEase = [0.16, 1, 0.3, 1] as const;
+
+/**
+ * Container com stagger
+ */
+const containerVariants: Variants = {
   hidden: {},
   show: {
     transition: {
@@ -27,27 +36,41 @@ const containerVariants = {
   },
 };
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
+/**
+ * Fade + Slide Up refinado
+ */
+const fadeUp: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 40,
+  },
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: {
+      duration: 0.7,
+      ease: smoothEase,
+    },
   },
 };
 
-const SobreEmpresa: React.FC = () => {
+const SobreEmpresa: FC = () => {
   return (
     <section
       id="sobreempresa"
-      className="bg-slate-900 text-white px-6 py-20 md:py-28 overflow-hidden"
+      className="relative bg-slate-900 text-white px-6 py-20 md:py-28 overflow-hidden"
     >
+      {/* Glow Background sutil */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-blue-500/10 rounded-full blur-[160px]" />
+      </div>
+
       <motion.div
-        className="max-w-6xl mx-auto text-center"
+        className="relative max-w-6xl mx-auto text-center"
         variants={containerVariants}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.25 }}
       >
         {/* Badge */}
         <motion.span
@@ -96,7 +119,11 @@ const SobreEmpresa: React.FC = () => {
               key={index}
               variants={fadeUp}
               whileHover={{ y: -8 }}
-              transition={{ type: "spring", stiffness: 200, damping: 15 }}
+              transition={{
+                type: "spring",
+                stiffness: 200,
+                damping: 18,
+              }}
               className="bg-slate-800/60 backdrop-blur-md 
                          border border-slate-700 
                          rounded-2xl p-8 
@@ -106,6 +133,7 @@ const SobreEmpresa: React.FC = () => {
               <h3 className="text-xl font-semibold text-blue-400 mb-4">
                 {card.title}
               </h3>
+
               <p className="text-slate-300 text-sm leading-relaxed">
                 {card.description}
               </p>
