@@ -5,6 +5,7 @@ import {
   MapPinLineIcon,
   PhoneIcon,
 } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -42,25 +43,35 @@ function Footer() {
               <h3 className="font-semibold text-lg mb-4">Navegação</h3>
               <ul className="space-y-3 text-sm opacity-90">
                 <li>
-                  <a href="#home" className="hover:underline">
+                  <Link
+                    to="/#hero"
+                    className="dark:text-slate-50 dark:hover:text-white/75"
+                  >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#sobreempresa" className="hover:underline">
+                  <Link
+                    to="/#sobreempresa"
+                    className="dark:text-slate-50 dark:hover:text-white/75"
+                  >
                     Sobre a Empresa
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#valores" className="hover:underline">
+                  <Link
+                    to="/#valores"
+                    className="dark:text-slate-50 dark:hover:text-white/75"
+                  >
                     Valores
-                  </a>
+                  </Link>
                 </li>
-                <li>
-                  <a href="#sobrenos" className="hover:underline">
-                    Sobre Nós
-                  </a>
-                </li>
+                <Link
+                  to="/sobrenos"
+                  className="dark:text-slate-50 dark:hover:text-white/75"
+                >
+                  Sobre Nós
+                </Link>
               </ul>
             </div>
 
@@ -86,9 +97,14 @@ function Footer() {
             <div>
               <h3 className="font-semibold text-lg mb-4">Desenvolvido por</h3>
               <div className="bg-white/5 rounded-xl p-4 w-fit mb-4">
-                <span className="text-xl font-bold text-white  px-4 py-2 rounded-md flex items-center gap-2">
-                  <img src="axiom-logo.png" className="w-36" alt="" />
-                </span>
+                <Link
+                  to="/sobrenos"
+                  className="dark:text-slate-50 dark:hover:text-white/75"
+                >
+                  <span className="text-xl font-bold text-white  px-4 py-2 rounded-md flex items-center gap-2">
+                    <img src="axiom-logo.png" className="w-36" alt="" />
+                  </span>
+                </Link>
               </div>
               <p className="text-sm opacity-90">
                 Tecnologia e inovação para conectar pessoas
