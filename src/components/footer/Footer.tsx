@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-
-
-function Footer() {
-
-
-  return <div></div>;
-=======
 import {
   EnvelopeIcon,
   GithubLogoIcon,
@@ -111,7 +103,6 @@ function Footer() {
       </footer>
     </div>
   );
->>>>>>> 002065d9430d66b66a58c0df4bdbbcf8bfa2841a
 }
 
 export default Footer;
