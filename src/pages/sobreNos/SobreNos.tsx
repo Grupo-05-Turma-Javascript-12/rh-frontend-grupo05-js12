@@ -19,19 +19,22 @@ const cards: SobreNosCard[] = [
     name: "Andreza Luiza",
     role: "Desenvolvedora Fullstack",
     photo: "/luiza.jpg",
-    description: "Desenvolvedora Full Stack em formação...",
+    description:
+      "Desenvolvedora Full Stack em formação, com experiência em HTML, CSS, JavaScript, React, TypeScript e Node.js. Atuando em projetos práticos, desenvolvo interfaces responsivas e funcionais, integrando front-end e back-end com organização e boas práticas. Comprometida com aprendizado contínuo e evolução constante na área de tecnologia.",
   },
   {
     name: "Cesar Henrique",
     role: "Desenvolvedor Fullstack",
     photo: "/cesar.jpg",
-    description: "Descrição detalhada do Cesar.",
+    description:
+      "esenvolvedor Full Stack com experiência no desenvolvimento de back-end escalável e interfaces modernas, utilizando Node.js, NestJS, TypeScript e React, sempre priorizando performance e qualidade de código.",
   },
   {
     name: "João Henrique",
     role: "Desenvolvedor Fullstack",
     photo: "/joao.jpg",
-    description: "Desenvolvedor Fullstack com sólida experiência...",
+    description:
+      "Desenvolvedor Fullstack com sólida experiência na construção de APIs escaláveis e aplicações web modernas utilizando Node.js, NestJS, TypeScript, Java, Spring Boot, React, MongoDB e SQL. Atuo no desenvolvimento de back-end robusto até a criação de interfaces front-end funcionais, sempre priorizando escalabilidade, performance e segurança.",
   },
   {
     name: "Josenil Soares",
@@ -44,7 +47,7 @@ const cards: SobreNosCard[] = [
     role: "Desenvolvedor Fullstack",
     photo: "/raylander.jpg",
     description:
-      "Desenvolvedor Full Stack com especialização em arquiteturas cloud-native...",
+      "Desenvolvedor Full Stack com especialização em arquiteturas cloud-native e práticas DevOps. Construo aplicações web completas utilizando TypeScript e Python, desde o front-end até a infraestrutura cloud.",
   },
   {
     name: "Stephanie Mayara",
@@ -120,7 +123,7 @@ export default function SobreNos() {
         {/* ================== TIME ================== */}
         <div>
           <div className="text-center mb-20">
-            <h3 className="text-4xl font-bold text-white">O time Axiom</h3>
+            <h3 className="text-4xl font-bold text-white">O Time</h3>
             <p className="text-slate-400 mt-6 max-w-2xl mx-auto text-lg">
               Construindo tecnologia com estratégia, clareza e visão de futuro.
             </p>
