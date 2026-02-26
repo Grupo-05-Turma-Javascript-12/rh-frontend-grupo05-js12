@@ -46,7 +46,7 @@ const floaty = {
 
 function Hero() {
   return (
-    <section className="relative bg-linear-to-br from-slate-800 to-slate-900 text-white overflow-hidden">
+    <section className="relative bg-slate-900 text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 py-20 lg:py-28">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
