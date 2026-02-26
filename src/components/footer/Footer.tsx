@@ -4,7 +4,6 @@ import {
   InstagramLogoIcon,
   MapPinLineIcon,
   PhoneIcon,
-  UsersFourIcon,
 } from "@phosphor-icons/react";
 
 function Footer() {
@@ -77,8 +76,8 @@ function Footer() {
             <div>
               <h3 className="font-semibold text-lg mb-4">Desenvolvido por</h3>
               <div className="bg-white/5 rounded-xl p-4 w-fit mb-4">
-                <span className="text-xl font-bold text-white  px-4 py-2 rounded-md flex items-center gap-2">
-                  <UsersFourIcon size={24} color="#ffffff" /> Axiom Team
+                <span className="text-xl font-bold text-white  px-4 py-2 rounded-md inline-block">
+                  Axiom Team
                 </span>
               </div>
               <p className="text-sm opacity-90">
