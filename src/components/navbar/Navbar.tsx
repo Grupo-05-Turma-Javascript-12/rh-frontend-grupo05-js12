@@ -5,6 +5,7 @@ import {
   type Variants,
 } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const EASE_OUT: Easing = [0.16, 1, 0.3, 1];
 
@@ -85,12 +86,13 @@ function Navbar() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    className="dark:text-slate-50 dark:hover:text-white/75"
-                    href="#sobrenos"
-                  >
-                    Sobre Nós
-                  </a>
+                  <Link to={"/sobrenos"}>
+                    <a
+                      className="dark:text-slate-50 dark:hover:text-white/75"
+                    >
+                      Sobre Nós
+                    </a>
+                  </Link>
                 </li>
               </ul>
             </nav>

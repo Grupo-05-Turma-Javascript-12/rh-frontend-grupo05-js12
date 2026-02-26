@@ -45,7 +45,7 @@ function Faq() {
             FAQ
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
-            Perguntas <br /> frequentes
+            Perguntas <br /> Frequentes
           </h1>
         </motion.div>
 
