@@ -62,34 +62,32 @@ function Navbar() {
             <nav aria-label="Global">
               <ul className="flex items-center gap-20 text-sm">
                 <li>
-                  <a
+                  <Link
+                    to="/#home"
                     className="dark:text-slate-50 dark:hover:text-white/75"
-                    href="#home"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
+                    to="/#sobreempresa"
                     className="dark:text-slate-50 dark:hover:text-white/75"
-                    href="#sobreempresa"
                   >
                     Sobre a Empresa
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
+                    to="/#valores"
                     className="dark:text-slate-50 dark:hover:text-white/75"
-                    href="#valores"
                   >
                     Valores
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link to={"/sobrenos"}>
-                    <a
-                      className="dark:text-slate-50 dark:hover:text-white/75"
-                    >
+                    <a className="dark:text-slate-50 dark:hover:text-white/75">
                       Sobre Nós
                     </a>
                   </Link>
@@ -165,42 +163,42 @@ function Navbar() {
                 className="flex flex-col gap-4 text-sm"
               >
                 <motion.li variants={item}>
-                  <a
-                    className="block dark:text-slate-50 dark:hover:text-white/75"
-                    href="#home"
+                  <Link
+                    to="/#home"
+                    className="dark:text-slate-50 dark:hover:text-white/75"
                     onClick={() => setIsOpen(false)}
                   >
                     Home
-                  </a>
+                  </Link>
                 </motion.li>
 
                 <motion.li variants={item}>
-                  <a
-                    className="block dark:text-slate-50 dark:hover:text-white/75"
-                    href="#sobre"
+                  <Link
+                    to="/#sobreempresa"
+                    className="dark:text-slate-50 dark:hover:text-white/75"
                     onClick={() => setIsOpen(false)}
                   >
                     Sobre a Empresa
-                  </a>
+                  </Link>
                 </motion.li>
 
                 <motion.li variants={item}>
-                  <a
-                    className="block dark:text-slate-50 dark:hover:text-white/75"
-                    href="#valores"
+                  <Link
+                    to="/#valores"
+                    className="dark:text-slate-50 dark:hover:text-white/75"
                     onClick={() => setIsOpen(false)}
                   >
                     Valores
-                  </a>
+                  </Link>
                 </motion.li>
                 <motion.li variants={item}>
-                  <a
-                    className="block dark:text-slate-50 dark:hover:text-white/75"
-                    href="#sobrenos"
+                  <Link
+                    to="/sobrenos"
+                    className="dark:text-slate-50 dark:hover:text-white/75"
                     onClick={() => setIsOpen(false)}
                   >
                     Sobre Nós
-                  </a>
+                  </Link>
                 </motion.li>
               </motion.ul>
             </nav>

@@ -19,8 +19,7 @@ export default function Valores() {
   };
 
   return (
-    <section className="w-full bg-slate-50">
-      {/* ======= BLOCO VALORES (BRANCO) ======= */}
+    <section className="w-full bg-slate-50" id="valores">
       <motion.div
         className="mx-auto max-w-6xl px-6 py-20"
         variants={stagger}
@@ -28,7 +27,6 @@ export default function Valores() {
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
       >
-        {/* HEADER */}
         <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
           <div>
             <motion.span
@@ -48,13 +46,13 @@ export default function Valores() {
 
           <motion.div variants={fadeUp} className="lg:pt-8">
             <p className="text-sm leading-relaxed text-slate-600 max-w-xl">
-              Unimos estratégia, eficiência e dados para estruturar processos de RH
-              modernos, com parceria de verdade para crescer junto com cada cliente.
+              Unimos estratégia, eficiência e dados para estruturar processos de
+              RH modernos, com parceria de verdade para crescer junto com cada
+              cliente.
             </p>
           </motion.div>
         </div>
 
-        {/* CARDS */}
         <motion.div
           variants={stagger}
           className="mt-16 grid gap-8 md:grid-cols-3"
@@ -71,7 +69,8 @@ export default function Valores() {
               </h3>
               <p className="mt-4 text-sm leading-relaxed text-slate-600">
                 Não indicamos candidatos. Estruturamos processos completos de
-                recrutamento para garantir eficiência, clareza e melhores decisões.
+                recrutamento para garantir eficiência, clareza e melhores
+                decisões.
               </p>
             </div>
           </motion.div>
@@ -114,16 +113,14 @@ export default function Valores() {
         </motion.div>
       </motion.div>
 
-      {/* ======= BANNER NÚMEROS (COM BG) ======= */}
       <motion.div
         className="w-full bg-cover bg-center bg-no-repeat relative"
-        style={{ backgroundImage: "url(/bg-valores.png)" }} // ✅ coloque na pasta /public
+        style={{ backgroundImage: "url(/bg-valores.png)" }}
         variants={fadeIn}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.2 }}
       >
-        {/* overlay */}
         <div className="absolute inset-0 bg-black/55" />
 
         <motion.div
