@@ -3,7 +3,7 @@ import { EnvelopeIcon, MapPinLineIcon, PhoneIcon } from "@phosphor-icons/react";
 function Footer() {
   return (
     <div>
-      <footer className="bg-linear-to-r from-slate-600 via-slate-700 to-slate-800 text-white">
+      <footer className="bg-linear-to-r from-slate-800 to-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-6 py-16">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div>
