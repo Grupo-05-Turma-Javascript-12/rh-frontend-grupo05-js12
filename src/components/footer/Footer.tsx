@@ -42,12 +42,12 @@ function Footer() {
               <h3 className="font-semibold text-lg mb-4">Navegação</h3>
               <ul className="space-y-3 text-sm opacity-90">
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#home" className="hover:underline">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#sobre" className="hover:underline">
                     Sobre Nós
                   </a>
                 </li>
