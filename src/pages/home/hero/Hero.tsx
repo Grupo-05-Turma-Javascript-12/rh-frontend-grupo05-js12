@@ -72,7 +72,7 @@ function Hero() {
             >
               Ache talentos que{" "}
               <span className="text-blue-500">Literalmente não</span> se
-              encontra em qualquer lugar!
+              encontram em qualquer lugar!
             </motion.h1>
 
             <motion.p
