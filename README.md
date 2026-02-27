@@ -1,6 +1,6 @@
 # 📌 Projeto Elevva — Documentação Técnica
 
-![Logo Elevva](https://i.imgur.com/your-link-to-logoelevva.png)
+![Logo Elevva](./public/logoelevva.png)
 
 ## 🏗️ Visão Geral
 Este é o frontend institucional da **Elevva**, desenvolvido com foco em performance, componentização e escalabilidade. A aplicação utiliza uma arquitetura moderna de **Single Page Application (SPA)** com código 100% tipado.
@@ -74,7 +74,7 @@ O projeto segue uma estrutura modular para facilitar a manutenção e o crescime
 
 O projeto foi planejado e executado por:
 
-![Logo Axiom](https://i.imgur.com/your-link-to-axiom-logo.png)
-*(Substitua pelo caminho relativo: ./public/axiom-logo.png)*
+![Logo Axiom](./public/axiom-logo.png)
+
 
 **Axiom Software Developers**
