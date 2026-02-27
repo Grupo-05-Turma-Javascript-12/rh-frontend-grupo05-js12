@@ -1,73 +1,80 @@
-# React + TypeScript + Vite
+# 📌 Projeto Elevva — Documentação Técnica
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Logo Elevva](https://i.imgur.com/your-link-to-logoelevva.png)
 
-Currently, two official plugins are available:
+## 🏗️ Visão Geral
+Este é o frontend institucional da **Elevva**, desenvolvido com foco em performance, componentização e escalabilidade. A aplicação utiliza uma arquitetura moderna de **Single Page Application (SPA)** com código 100% tipado.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+## 🧠 Arquitetura do Projeto
+O projeto segue uma estrutura modular para facilitar a manutenção e o crescimento sustentável do código.
 
-## React Compiler
+### 📂 Estrutura de Diretórios
+* **src/components/**: Componentes reutilizáveis (Navbar, Footer, Cards).
+* **src/pages/**: Páginas da aplicação organizadas por domínio (Home, Sobre Nós).
+* **src/assets/**: Arquivos estáticos como imagens e SVGs.
+* **src/utils/**: Funções auxiliares e lógica de suporte.
+* **App.tsx**: Configuração central de rotas e provedores.
+* **main.tsx**: Ponto de entrada da aplicação React.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 💻 Stack Tecnológica
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Core
+* **React 19**: Biblioteca base para construção de interfaces.
+* **TypeScript (~5.9.3)**: Garantia de segurança de tipos e melhor intellisense.
+* **Vite 7**: Ferramenta de build de última geração para desenvolvimento ultra-rápido.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Estilização e UI
+* **Tailwind CSS 4**: Framework utility-first para design responsivo e ágil.
+* **Framer Motion**: Biblioteca para animações e transições fluidas.
+* **Lucide-React & Phosphor Icons**: Conjuntos de ícones vetoriais modernos.
+* **React-Toastify**: Sistema de notificações e alertas visuais.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Navegação e Qualidade
+* **React Router Dom 7**: Gerenciamento de rotas e navegação SPA.
+* **ESLint 9**: Padronização de código e prevenção de erros estáticos.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Como Rodar o Projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1.  **Instalar dependências:**
+    ```bash
+    npm install
+    ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2.  **Iniciar ambiente de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+
+3.  **Gerar build de produção:**
+    ```bash
+    npm run build
+    ```
+
+4.  **Verificar erros de linting:**
+    ```bash
+    npm run lint
+    ```
+
+---
+
+## 📈 Características Técnicas
+* **SPA Moderna**: Navegação instantânea sem recarregamento de página.
+* **Arquitetura Escalável**: Preparado para integração futura com APIs e backends.
+* **Design Responsivo**: Adaptado para diversos tamanhos de tela através do Tailwind.
+* **Build Otimizado**: Aproveita o poder do Vite para entregar um bundle leve.
+
+---
+
+## 🏢 Responsável pelo Desenvolvimento
+
+O projeto foi planejado e executado por:
+
+![Logo Axiom](https://i.imgur.com/your-link-to-axiom-logo.png)
+*(Substitua pelo caminho relativo: ./public/axiom-logo.png)*
+
+**Axiom Software Developers**

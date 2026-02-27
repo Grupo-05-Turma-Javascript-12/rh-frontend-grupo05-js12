@@ -19,14 +19,8 @@ const cards = [
   },
 ];
 
-/**
- * Easing moderno (padrão Apple / Stripe feel)
- */
 const smoothEase = [0.16, 1, 0.3, 1] as const;
 
-/**
- * Container com stagger
- */
 const containerVariants: Variants = {
   hidden: {},
   show: {
@@ -36,9 +30,7 @@ const containerVariants: Variants = {
   },
 };
 
-/**
- * Fade + Slide Up refinado
- */
+
 const fadeUp: Variants = {
   hidden: {
     opacity: 0,
